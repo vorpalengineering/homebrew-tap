@@ -1,7 +1,7 @@
 class Vorpal < Formula
   desc "CLI tool for the Vorpal Engineering security platform"
   homepage "https://github.com/vorpalengineering/cli"
-  version "0.1.0"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
