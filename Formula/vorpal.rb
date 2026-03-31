@@ -7,16 +7,16 @@ class Vorpal < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vorpalengineering/cli/releases/download/v#{version}/vorpal-v#{version}-darwin-arm64.tar.gz"
-      sha256 "66b6b009064e67a8587dc7de52671a311be3834e6bfdeb9895041a9534a6ee4c"
+      sha256 "01765876cc35c705296aeed37d23f7c7378e220b98df44bd604397992fa1fb6b"
     else
       url "https://github.com/vorpalengineering/cli/releases/download/v#{version}/vorpal-v#{version}-darwin-amd64.tar.gz"
-      sha256 "d32602983fc58fdbb2f78e4d98aba1e156c646d27aab923e2f9f7d080adf8a7d"
+      sha256 "08a40b657b17f873a75011ebf53e5259fa3e5fea8ca6ddeca618d7103aa1e922"
     end
   end
 
   on_linux do
     url "https://github.com/vorpalengineering/cli/releases/download/v#{version}/vorpal-v#{version}-linux-amd64.tar.gz"
-    sha256 "9e4830149659c904103c42e5c2ad1a657077f3e077911c40e74715e1b5297db9"
+    sha256 "bb99e4079a292e5ab312f28c6bc2e9ab11d56511a7acd372cd8878ec50625bd0"
   end
 
   def install
