@@ -1,22 +1,22 @@
 class Vorpal < Formula
   desc "CLI tool for the Vorpal Engineering Blockchain Intelligence Platform"
   homepage "https://github.com/vorpalengineering/cli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/vorpalengineering/cli/releases/download/v#{version}/vorpal-v#{version}-darwin-arm64.tar.gz"
-      sha256 "8032abebf8497700277fc0d51beef93924253a1a377dff3156de79735bd225e5"
+      sha256 "f4f205cc3bb6ea7baa0dfe42de0d0514bcfadf3c67641a1e06cb4324fb7e3200"
     else
       url "https://github.com/vorpalengineering/cli/releases/download/v#{version}/vorpal-v#{version}-darwin-amd64.tar.gz"
-      sha256 "cfcda5e9666aa61bfa149c18e547c61f205af3ece2747582268fa138cb88e1c6"
+      sha256 "f8f537d15aa326bba9aedcb71d9a1ce477ce9d4df278f1af66e97ecfba44f790"
     end
   end
 
   on_linux do
     url "https://github.com/vorpalengineering/cli/releases/download/v#{version}/vorpal-v#{version}-linux-amd64.tar.gz"
-    sha256 "48791a523607e91565e27189e0d6ff19ab862cb88aea1a2f63f3a7c1df7307a7"
+    sha256 "d0e2703c8bd73e4d9e5a9a4a310543fb6f2857a21b8ee34b7ec4b52cb0b4ee1f"
   end
 
   def install
